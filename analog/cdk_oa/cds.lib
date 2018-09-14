@@ -1,1 +1,9 @@
-DEF
+# File Created by Chixiao Chen at Sat Aug 25 22:50:53 2018
+# assisted by CdsLibEditor
+
+DEFINE tsmcN65    /home/.../tsmcN65
+DEFINE tcbn65lp   /home/.../tcbn65lp
+DEFINE basic      $CDSHOME/tools/dfII/etc/cdslib/basic
+DEFINE analogLib  $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+
+DEFINE rail65     ./rail65
