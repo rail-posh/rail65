@@ -8,6 +8,10 @@ Download the rail65.zip file and unzip in your virtuoso directory
 
 Plz include the path for the pdk/std cell/analogLib library path
 
+## Step 3: Launch the Virtuoso !
+
+You should see the rail65 lib in your library manager.
+
 ## Appendix: rail65 cell list 
 
 **Switch Category**: MX2D, MX2U, NSW1, PSW1, PXRO, SWFD, TBUF, TGAT
