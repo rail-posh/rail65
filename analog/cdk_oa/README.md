@@ -18,8 +18,8 @@ You should see the rail65 lib in your library manager.
 
 **Delay Cell Category**: DLY1, PXRO, VCDC, VCDP
 
-**Passive**: MOM1, MOM2, PCAP, NCAP
+**Passive Category**: MOM1, MOM2, PCAP, NCAP
 
-**Custom Defined Cells**: CDC1
+**Custom Defined Cells Category**: CDC1
 
 
