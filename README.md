@@ -1,4 +1,4 @@
-# RAIL: Resilent Analog Instance Lanaugae 
+# RAIL: Resilent Analog Instance Language 
 ## Enabled Process-Portable Analog Mixed-Signal Circuits
 
 RAIL project is an open source project project for agile AMS designs.
