@@ -1,0 +1,907 @@
+library (rail65) {
+	nom_temperature : 25;
+	nom_voltage : 1.2;
+	voltage_map(COREVDD1, 1.2);
+	voltage_map(COREGND1, 0.0);
+	operating_conditions("NCCOM"){
+		process : 1; /* TT TT_25 */
+		temperature : 25;
+		voltage : 1.2;
+		tree_type : "balanced_tree";
+	}
+	default_operating_conditions : NCCOM ;
+	capacitive_load_unit (1,pf) ;
+	voltage_unit : "1V" ;
+	current_unit : "1mA" ;
+	time_unit : "1ns" ;
+	pulling_resistance_unit : "1kohm"; 
+	define_cell_area (pad_drivers,pad_driver_sites) ;
+	define_cell_area(bond_pads,pad_slots) ;
+	library_features (report_delay_calculation);
+	default_leakage_power_density : 0.0;
+	default_fanout_load : 1;
+	voltage_map(COREVDD1, 1.2);
+	voltage_map(COREGND1, 0.0);
+
+	/* ---------------------------- *
+	 * Design : TGAT *
+	 * ---------------------------- */
+
+	cell (TGAT) {
+		area : 14.04;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+		pg_pin (VSS) {
+			pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(SW) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+
+
+		pin(POS) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}  
+		}
+
+		pin(NEG) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(!SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}  
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : MX2D *
+	 * ---------------------------- */
+
+	cell (MX2D) {
+		area : 25.2;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(SW) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(NEG) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+		pin(POS) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : MX2U *
+	 * ---------------------------- */
+
+	cell (MX2U) {
+		area : 23.4;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(SW) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(NEG) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+		pin(POS) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : NSW1 *
+	 * ---------------------------- */
+
+	cell (NSW1) {
+		area : 10.08;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(SW) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(NEG) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+		pin(POS) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : PSW1 *
+	 * ---------------------------- */
+
+	cell (PSW1) {
+		area : 8.28;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(SW) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(NEG) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+		pin(POS) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(SW)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!SW)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "SW";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : SWFD *
+	 * ---------------------------- */
+
+	cell (SWFD) {
+		area : 20.16;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(DIN) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(VH) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(DIN)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!DIN)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "DIN";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+		pin(VL) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(DIN)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!DIN)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "DIN";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+		pin(AOUT) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(DIN)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!DIN)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "DIN";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : PCAP *
+	 * ---------------------------- */
+
+	cell (PCAP) {
+		area : 6.12;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(CT) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(VIN) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(CT)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!CT)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "CT";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : NCAP *
+	 * ---------------------------- */
+
+	cell (NCAP) {
+		area : 6.48;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(CT) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(VIN) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(CT)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!CT)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "CT";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : DLY1 *
+	 * ---------------------------- */
+
+	cell (DLY1) {
+		area : 6.12;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(I) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(Z) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(I)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!I)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "I";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : VCDC *
+	 * ---------------------------- */
+
+	cell (VCDC) {
+		area : 3.6;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(clk) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(vin) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(ckout) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(vin)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!vin)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "vin";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : VCDP *
+	 * ---------------------------- */
+
+	cell (VCDP) {
+		area : 3.6;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(clk) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(vin) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(ckout) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(vin)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!vin)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "vin";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : PXRO *
+	 * ---------------------------- */
+
+	cell (PXRO) {
+		area : 10.44;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(D) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(EN) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(RST) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(A) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(Z) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(A)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!A)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "A";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+		pin(VO) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(A)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!A)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "A";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : TBUF *
+	 * ---------------------------- */
+
+	cell (TBUF) {
+		area : 5.04;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(I) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(OE) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(Z) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(OE)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!OE)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "OE";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : MOM1 *
+	 * ---------------------------- */
+
+	cell (MOM1) {
+		area : 5.4;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(POS) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(NEG) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(POS)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!POS)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "POS";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+
+	/* ---------------------------- *
+	 * Design : MOM2 *
+	 * ---------------------------- */
+
+	cell (MOM2) {
+		area : 4.32;
+		pg_pin (VDD) {
+			pg_type : primary_power;
+			voltage_name : COREVDD1;
+		}
+
+		pg_pin (VSS) {
+				pg_type : primary_ground;
+			voltage_name : COREGND1;
+		}
+
+		leakage_power () {
+			value : 0.280763;
+			related_pg_pin : VDD;
+		}
+		pin(POS) {
+			direction : input;
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			capacitance : 0.001565;
+			rise_capacitance : 0.001482;
+			fall_capacitance : 0.001565;
+		}
+		pin(NEG) {
+			direction : output;
+			power_down_function : "!VDD + VSS";
+			function : "(POS)";
+			related_ground_pin : VSS;
+			related_power_pin : VDD;
+			three_state : "(!POS)";
+			capacitance : 0.005041;
+			rise_capacitance : 0.004861;
+			fall_capacitance : 0.005041;
+			timing () {
+				related_pin : "POS";
+				timing_sense : negative_unate;
+				timing_type : combinational;
+			}
+		}
+	}
+
+}
