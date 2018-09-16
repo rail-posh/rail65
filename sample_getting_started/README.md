@@ -1,7 +1,7 @@
 # Tutuorial on RAIL getting started
 
 The instruction for the getting-started sample is avialable via  
-https://rail-posh.readthedocs.io/en/latest/tutgst.html#
+https://rail-posh.readthedocs.io/en/release0918/railib/tutgst.html
 
 ## Files List
 
