@@ -7,5 +7,5 @@ https://rail-posh.readthedocs.io/en/release0918/railib/tutgst.html
 
 In the directory, we have 
 
-- *sw_bk_01.v*, the RTL (structural verilog nectlist) file
+- *swbk01.v*, the RTL (structural verilog netlist) file
 - *xx.tcl*, four tcl scripts for ICC placement and routing
