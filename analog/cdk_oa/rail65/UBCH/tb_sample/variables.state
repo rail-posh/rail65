@@ -1,0 +1,598 @@
+savedComponent = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38 tmp39 tmp40 tmp41 tmp42 tmp43 tmp44 tmp45 tmp46 tmp47 tmp48 tmp49 tmp50 tmp51 tmp52 tmp53 tmp54 tmp55 tmp56 tmp57 tmp58 tmp59 tmp60 tmp61 tmp62 tmp63 tmp64 tmp65 tmp66)
+(unless tmp1
+tmp1 = make_sevVariableStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "cin"
+tmp1->expression = "10f"
+tmp1->index = 1
+(unless tmp2
+tmp2 = make_sevVariableStruct()
+)
+(unless tmp2
+tmp2 = (ncons nil)
+)
+tmp2->name = "cld"
+tmp2->expression = "1f"
+tmp2->index = 2
+(unless tmp3
+tmp3 = make_sevVariableStruct()
+)
+(unless tmp3
+tmp3 = (ncons nil)
+)
+tmp3->name = "fsin1"
+tmp3->expression = "1K"
+tmp3->index = 3
+(unless tmp4
+tmp4 = make_sevVariableStruct()
+)
+(unless tmp4
+tmp4 = (ncons nil)
+)
+tmp4->name = "idc1"
+tmp4->expression = "0"
+tmp4->index = 4
+(unless tmp5
+tmp5 = make_sevVariableStruct()
+)
+(unless tmp5
+tmp5 = (ncons nil)
+)
+tmp5->name = "idc2"
+tmp5->expression = "0"
+tmp5->index = 5
+(unless tmp6
+tmp6 = make_sevVariableStruct()
+)
+(unless tmp6
+tmp6 = (ncons nil)
+)
+tmp6->name = "lvdd1"
+tmp6->expression = "0"
+tmp6->index = 6
+(unless tmp7
+tmp7 = make_sevVariableStruct()
+)
+(unless tmp7
+tmp7 = (ncons nil)
+)
+tmp7->name = "lvdd2"
+tmp7->expression = "0"
+tmp7->index = 7
+(unless tmp8
+tmp8 = make_sevVariableStruct()
+)
+(unless tmp8
+tmp8 = (ncons nil)
+)
+tmp8->name = "lvdd3"
+tmp8->expression = "0"
+tmp8->index = 8
+(unless tmp9
+tmp9 = make_sevVariableStruct()
+)
+(unless tmp9
+tmp9 = (ncons nil)
+)
+tmp9->name = "lvdd4"
+tmp9->expression = "0"
+tmp9->index = 9
+(unless tmp10
+tmp10 = make_sevVariableStruct()
+)
+(unless tmp10
+tmp10 = (ncons nil)
+)
+tmp10->name = "lvrf1"
+tmp10->expression = "0.6"
+tmp10->index = 10
+(unless tmp11
+tmp11 = make_sevVariableStruct()
+)
+(unless tmp11
+tmp11 = (ncons nil)
+)
+tmp11->name = "lvrf2"
+tmp11->expression = "0.6"
+tmp11->index = 11
+(unless tmp12
+tmp12 = make_sevVariableStruct()
+)
+(unless tmp12
+tmp12 = (ncons nil)
+)
+tmp12->name = "lvrf3"
+tmp12->expression = "0.6"
+tmp12->index = 12
+(unless tmp13
+tmp13 = make_sevVariableStruct()
+)
+(unless tmp13
+tmp13 = (ncons nil)
+)
+tmp13->name = "lvrf4"
+tmp13->expression = "0.6"
+tmp13->index = 13
+(unless tmp14
+tmp14 = make_sevVariableStruct()
+)
+(unless tmp14
+tmp14 = (ncons nil)
+)
+tmp14->name = "lvss1"
+tmp14->expression = "0"
+tmp14->index = 14
+(unless tmp15
+tmp15 = make_sevVariableStruct()
+)
+(unless tmp15
+tmp15 = (ncons nil)
+)
+tmp15->name = "lvss2"
+tmp15->expression = "0"
+tmp15->index = 15
+(unless tmp16
+tmp16 = make_sevVariableStruct()
+)
+(unless tmp16
+tmp16 = (ncons nil)
+)
+tmp16->name = "lvss3"
+tmp16->expression = "0"
+tmp16->index = 16
+(unless tmp17
+tmp17 = make_sevVariableStruct()
+)
+(unless tmp17
+tmp17 = (ncons nil)
+)
+tmp17->name = "lvss4"
+tmp17->expression = "0"
+tmp17->index = 17
+(unless tmp18
+tmp18 = make_sevVariableStruct()
+)
+(unless tmp18
+tmp18 = (ncons nil)
+)
+tmp18->name = "rld"
+tmp18->expression = "1M"
+tmp18->index = 18
+(unless tmp19
+tmp19 = make_sevVariableStruct()
+)
+(unless tmp19
+tmp19 = (ncons nil)
+)
+tmp19->name = "rsw_pwl"
+tmp19->expression = "1T"
+tmp19->index = 19
+(unless tmp20
+tmp20 = make_sevVariableStruct()
+)
+(unless tmp20
+tmp20 = (ncons nil)
+)
+tmp20->name = "rsw_sin"
+tmp20->expression = "1T"
+tmp20->index = 20
+(unless tmp21
+tmp21 = make_sevVariableStruct()
+)
+(unless tmp21
+tmp21 = (ncons nil)
+)
+tmp21->name = "rvdd1"
+tmp21->expression = "1u"
+tmp21->index = 21
+(unless tmp22
+tmp22 = make_sevVariableStruct()
+)
+(unless tmp22
+tmp22 = (ncons nil)
+)
+tmp22->name = "rvdd2"
+tmp22->expression = "1u"
+tmp22->index = 22
+(unless tmp23
+tmp23 = make_sevVariableStruct()
+)
+(unless tmp23
+tmp23 = (ncons nil)
+)
+tmp23->name = "rvdd3"
+tmp23->expression = "1u"
+tmp23->index = 23
+(unless tmp24
+tmp24 = make_sevVariableStruct()
+)
+(unless tmp24
+tmp24 = (ncons nil)
+)
+tmp24->name = "rvdd4"
+tmp24->expression = "1u"
+tmp24->index = 24
+(unless tmp25
+tmp25 = make_sevVariableStruct()
+)
+(unless tmp25
+tmp25 = (ncons nil)
+)
+tmp25->name = "rvrf1"
+tmp25->expression = "1u"
+tmp25->index = 25
+(unless tmp26
+tmp26 = make_sevVariableStruct()
+)
+(unless tmp26
+tmp26 = (ncons nil)
+)
+tmp26->name = "rvrf2"
+tmp26->expression = "1u"
+tmp26->index = 26
+(unless tmp27
+tmp27 = make_sevVariableStruct()
+)
+(unless tmp27
+tmp27 = (ncons nil)
+)
+tmp27->name = "rvrf3"
+tmp27->expression = "1u"
+tmp27->index = 27
+(unless tmp28
+tmp28 = make_sevVariableStruct()
+)
+(unless tmp28
+tmp28 = (ncons nil)
+)
+tmp28->name = "rvrf4"
+tmp28->expression = "1u"
+tmp28->index = 28
+(unless tmp29
+tmp29 = make_sevVariableStruct()
+)
+(unless tmp29
+tmp29 = (ncons nil)
+)
+tmp29->name = "rvss1"
+tmp29->expression = "1u"
+tmp29->index = 29
+(unless tmp30
+tmp30 = make_sevVariableStruct()
+)
+(unless tmp30
+tmp30 = (ncons nil)
+)
+tmp30->name = "rvss2"
+tmp30->expression = "1u"
+tmp30->index = 30
+(unless tmp31
+tmp31 = make_sevVariableStruct()
+)
+(unless tmp31
+tmp31 = (ncons nil)
+)
+tmp31->name = "rvss3"
+tmp31->expression = "1u"
+tmp31->index = 31
+(unless tmp32
+tmp32 = make_sevVariableStruct()
+)
+(unless tmp32
+tmp32 = (ncons nil)
+)
+tmp32->name = "rvss4"
+tmp32->expression = "1u"
+tmp32->index = 32
+(unless tmp33
+tmp33 = make_sevVariableStruct()
+)
+(unless tmp33
+tmp33 = (ncons nil)
+)
+tmp33->name = "tck1"
+tmp33->expression = "2.5n"
+tmp33->index = 33
+(unless tmp34
+tmp34 = make_sevVariableStruct()
+)
+(unless tmp34
+tmp34 = (ncons nil)
+)
+tmp34->name = "tck2"
+tmp34->expression = "10n"
+tmp34->index = 34
+(unless tmp35
+tmp35 = make_sevVariableStruct()
+)
+(unless tmp35
+tmp35 = (ncons nil)
+)
+tmp35->name = "tck3"
+tmp35->expression = "10n"
+tmp35->index = 35
+(unless tmp36
+tmp36 = make_sevVariableStruct()
+)
+(unless tmp36
+tmp36 = (ncons nil)
+)
+tmp36->name = "tdy1"
+tmp36->expression = "1n"
+tmp36->index = 36
+(unless tmp37
+tmp37 = make_sevVariableStruct()
+)
+(unless tmp37
+tmp37 = (ncons nil)
+)
+tmp37->name = "tdy2"
+tmp37->expression = "1n"
+tmp37->index = 37
+(unless tmp38
+tmp38 = make_sevVariableStruct()
+)
+(unless tmp38
+tmp38 = (ncons nil)
+)
+tmp38->name = "tdy3"
+tmp38->expression = "1n"
+tmp38->index = 38
+(unless tmp39
+tmp39 = make_sevVariableStruct()
+)
+(unless tmp39
+tmp39 = (ncons nil)
+)
+tmp39->name = "tfl"
+tmp39->expression = "10p"
+tmp39->index = 39
+(unless tmp40
+tmp40 = make_sevVariableStruct()
+)
+(unless tmp40
+tmp40 = (ncons nil)
+)
+tmp40->name = "tpwl1"
+tmp40->expression = "1n"
+tmp40->index = 40
+(unless tmp41
+tmp41 = make_sevVariableStruct()
+)
+(unless tmp41
+tmp41 = (ncons nil)
+)
+tmp41->name = "tpwl2"
+tmp41->expression = "2n"
+tmp41->index = 41
+(unless tmp42
+tmp42 = make_sevVariableStruct()
+)
+(unless tmp42
+tmp42 = (ncons nil)
+)
+tmp42->name = "tpwl3"
+tmp42->expression = "3n"
+tmp42->index = 42
+(unless tmp43
+tmp43 = make_sevVariableStruct()
+)
+(unless tmp43
+tmp43 = (ncons nil)
+)
+tmp43->name = "tpwl4"
+tmp43->expression = "4n"
+tmp43->index = 43
+(unless tmp44
+tmp44 = make_sevVariableStruct()
+)
+(unless tmp44
+tmp44 = (ncons nil)
+)
+tmp44->name = "tpwl5"
+tmp44->expression = "5n"
+tmp44->index = 44
+(unless tmp45
+tmp45 = make_sevVariableStruct()
+)
+(unless tmp45
+tmp45 = (ncons nil)
+)
+tmp45->name = "tpwl6"
+tmp45->expression = "6n"
+tmp45->index = 45
+(unless tmp46
+tmp46 = make_sevVariableStruct()
+)
+(unless tmp46
+tmp46 = (ncons nil)
+)
+tmp46->name = "trs"
+tmp46->expression = "10p"
+tmp46->index = 46
+(unless tmp47
+tmp47 = make_sevVariableStruct()
+)
+(unless tmp47
+tmp47 = (ncons nil)
+)
+tmp47->name = "vck1"
+tmp47->expression = "1.2"
+tmp47->index = 47
+(unless tmp48
+tmp48 = make_sevVariableStruct()
+)
+(unless tmp48
+tmp48 = (ncons nil)
+)
+tmp48->name = "vck2"
+tmp48->expression = "1"
+tmp48->index = 48
+(unless tmp49
+tmp49 = make_sevVariableStruct()
+)
+(unless tmp49
+tmp49 = (ncons nil)
+)
+tmp49->name = "vck3"
+tmp49->expression = "1"
+tmp49->index = 49
+(unless tmp50
+tmp50 = make_sevVariableStruct()
+)
+(unless tmp50
+tmp50 = (ncons nil)
+)
+tmp50->name = "vcm1"
+tmp50->expression = "0.6"
+tmp50->index = 50
+(unless tmp51
+tmp51 = make_sevVariableStruct()
+)
+(unless tmp51
+tmp51 = (ncons nil)
+)
+tmp51->name = "vcm2"
+tmp51->expression = "0.6"
+tmp51->index = 51
+(unless tmp52
+tmp52 = make_sevVariableStruct()
+)
+(unless tmp52
+tmp52 = (ncons nil)
+)
+tmp52->name = "vdd1"
+tmp52->expression = "1.2"
+tmp52->index = 52
+(unless tmp53
+tmp53 = make_sevVariableStruct()
+)
+(unless tmp53
+tmp53 = (ncons nil)
+)
+tmp53->name = "vdd2"
+tmp53->expression = "1.2"
+tmp53->index = 53
+(unless tmp54
+tmp54 = make_sevVariableStruct()
+)
+(unless tmp54
+tmp54 = (ncons nil)
+)
+tmp54->name = "vdd3"
+tmp54->expression = "1.2"
+tmp54->index = 54
+(unless tmp55
+tmp55 = make_sevVariableStruct()
+)
+(unless tmp55
+tmp55 = (ncons nil)
+)
+tmp55->name = "vdd4"
+tmp55->expression = "1.2"
+tmp55->index = 55
+(unless tmp56
+tmp56 = make_sevVariableStruct()
+)
+(unless tmp56
+tmp56 = (ncons nil)
+)
+tmp56->name = "vpwl1"
+tmp56->expression = "0.6"
+tmp56->index = 56
+(unless tmp57
+tmp57 = make_sevVariableStruct()
+)
+(unless tmp57
+tmp57 = (ncons nil)
+)
+tmp57->name = "vpwl2"
+tmp57->expression = "0.6"
+tmp57->index = 57
+(unless tmp58
+tmp58 = make_sevVariableStruct()
+)
+(unless tmp58
+tmp58 = (ncons nil)
+)
+tmp58->name = "vpwl3"
+tmp58->expression = "0.6"
+tmp58->index = 58
+(unless tmp59
+tmp59 = make_sevVariableStruct()
+)
+(unless tmp59
+tmp59 = (ncons nil)
+)
+tmp59->name = "vpwl4"
+tmp59->expression = "0.6"
+tmp59->index = 59
+(unless tmp60
+tmp60 = make_sevVariableStruct()
+)
+(unless tmp60
+tmp60 = (ncons nil)
+)
+tmp60->name = "vpwl5"
+tmp60->expression = "0.6"
+tmp60->index = 60
+(unless tmp61
+tmp61 = make_sevVariableStruct()
+)
+(unless tmp61
+tmp61 = (ncons nil)
+)
+tmp61->name = "vpwl6"
+tmp61->expression = "0.6"
+tmp61->index = 61
+(unless tmp62
+tmp62 = make_sevVariableStruct()
+)
+(unless tmp62
+tmp62 = (ncons nil)
+)
+tmp62->name = "vrf1"
+tmp62->expression = "0.6"
+tmp62->index = 62
+(unless tmp63
+tmp63 = make_sevVariableStruct()
+)
+(unless tmp63
+tmp63 = (ncons nil)
+)
+tmp63->name = "vrf2"
+tmp63->expression = "0.6"
+tmp63->index = 63
+(unless tmp64
+tmp64 = make_sevVariableStruct()
+)
+(unless tmp64
+tmp64 = (ncons nil)
+)
+tmp64->name = "vrf3"
+tmp64->expression = "0.6"
+tmp64->index = 64
+(unless tmp65
+tmp65 = make_sevVariableStruct()
+)
+(unless tmp65
+tmp65 = (ncons nil)
+)
+tmp65->name = "vrf4"
+tmp65->expression = "0.6"
+tmp65->index = 65
+(unless tmp66
+tmp66 = make_sevVariableStruct()
+)
+(unless tmp66
+tmp66 = (ncons nil)
+)
+tmp66->name = "vsin1"
+tmp66->expression = "0.3"
+tmp66->index = 66
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38 tmp39 tmp40 tmp41 tmp42 tmp43 tmp44 tmp45 tmp46 tmp47 tmp48 tmp49 tmp50 tmp51 tmp52 tmp53 tmp54 tmp55 tmp56 tmp57 tmp58 tmp59 tmp60 tmp61 tmp62 tmp63 tmp64 tmp65 tmp66)
+)
