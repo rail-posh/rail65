@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      cxchen2
+HostName                       vlsi024.ee.washington.edu
+ProcessIdentifier              20229
+ProcessCreationTime_UTC        1537994424
+ProcessCreationTime_Readable   Wed Sep 26 20:40:24 2018 UTC
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/cxchen2/workspace/VTS_T65_RAIL/rail65/pch_rvt_a2/schematic/sch.oa.cdslck
+TimeEditLocked                 Fri Sep 28 19:00:33 2018 UTC
