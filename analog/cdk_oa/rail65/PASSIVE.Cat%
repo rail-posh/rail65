@@ -1,0 +1,6 @@
+TDMCHECKPOINT="1.0"
+keepEmptyCategory type="unknown"
+rail65/MOM1 type="cell"
+rail65/MOM2 type="cell"
+rail65/NCAP type="cell"
+rail65/PCAP type="cell"
