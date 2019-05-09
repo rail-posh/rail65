@@ -25,6 +25,8 @@ https://github.com/rail-posh/rail65/tree/master/doc/RAIL_Cell_Lib.pdf
 
 **Passive Category**: MOM1, MOM2, PCAP, PCAP2, NCAP, NCAP2
 
-**Custom Defined Cells Category**: CDC1, P1N1, P1N2, P1N3, P2N1, P2N2, P2N3, P3N1, P3N2, P3N3
+**Custom Defined Cells Category**: CDC1
+
+**Channel Connect Block**: P1N1, P1N2, P1N3, P2N1, P2N2, P2N3, P3N1, P3N2, P3N3
 
 
