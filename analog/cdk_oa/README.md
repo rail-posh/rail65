@@ -19,12 +19,12 @@ The draft datasheet of the rail cells can be found via the link:
 https://v2.overleaf.com/read/kdknxgpmsrpn
 
 
-**Switch Category**: MX2D, MX2U, NSW1, PSW1, PXRO, SWFD, TBUF, TGAT
+**Switch Category**: MX2D, MX2U, NSW0, NSW05, NSW1, PSW0, PSW05 PSW1, PXRO, SWFD, TBUF, TGAT
 
-**Delay Cell Category**: DLY1, PXRO, VCDC, VCDP
+**Delay Cell Category**: DLY1, PXRO, VCDC, VCDC1, VCDC2, VCDC3, VCDP, VCDP1, VCDP2, VCDP3
 
-**Passive Category**: MOM1, MOM2, PCAP, NCAP
+**Passive Category**: MOM1, MOM2, PCAP, PCAP2, NCAP, NCAP2
 
-**Custom Defined Cells Category**: CDC1
+**Custom Defined Cells Category**: CDC1, P1N1, P1N2, P1N3, P2N1, P2N2, P2N3, P3N1, P3N2, P3N3
 
 
