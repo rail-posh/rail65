@@ -16,7 +16,7 @@ You should see the rail65 lib in your library manager.
 
 The draft datasheet of the rail cells can be found via the link:
 
-https://v2.overleaf.com/read/kdknxgpmsrpn
+https://github.com/rail-posh/rail65/tree/master/doc/RAIL_Cell_Lib.pdf
 
 
 **Switch Category**: MX2D, MX2U, NSW0, NSW05, NSW1, PSW0, PSW05 PSW1, PXRO, SWFD, TBUF, TGAT
