@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      hhhuang
+HostName                       vlsi005.ee.washington.edu
+ProcessIdentifier              13411
+ProcessCreationTime_UTC        1557516035
+ProcessCreationTime_Readable   Fri May 10 19:20:35 2019 UTC
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/hhhuang/cxchen2/VTS_T65_RAIL/rail_m1/rail_repo/rail_lib1/P12N/schematic/sch.oa.cdslck
+TimeEditLocked                 Fri May 10 19:55:46 2019 UTC
