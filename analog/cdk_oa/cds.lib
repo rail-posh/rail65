@@ -6,4 +6,4 @@ DEFINE tcbn65lp   /home/.../tcbn65lp
 DEFINE basic      $CDSHOME/tools/dfII/etc/cdslib/basic
 DEFINE analogLib  $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
 
-DEFINE rail65     ./rail65
+DEFINE rail65     ./rail65  
