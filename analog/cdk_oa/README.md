@@ -16,7 +16,7 @@ You should see the rail65 lib in your library manager.
 
 The draft datasheet of the rail cells can be found via the link:
 
-https://github.com/rail-posh/rail65/tree/master/doc/RAIL_Cell_Lib.pdf
+https://github.com/rail-posh/rail65/blob/master/doc/rail_lib_v2.pdf
 
 
 **Switch Category**: MX2D, MX2U, NSW0, NSW05, NSW1, PSW0, PSW05 PSW1, PXRO, SWFD, TBUF, TGAT
@@ -27,6 +27,6 @@ https://github.com/rail-posh/rail65/tree/master/doc/RAIL_Cell_Lib.pdf
 
 **Custom Defined Cells Category**: CDC1
 
-**Channel Connect Block**: P1N1, P1N2, P1N3, P2N1, P2N2, P2N3, P3N1, P3N2, P3N3
+**Custom Defined Channel Connect Block**: P1N1, P1N2, P1N3, P2N1, P2N2, P2N3, P3N1, P3N2, P3N3, P12N
 
 
