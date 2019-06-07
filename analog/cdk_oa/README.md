@@ -29,4 +29,4 @@ https://github.com/rail-posh/rail65/blob/master/doc/rail_lib_v2.pdf
 
 **Custom Defined Channel Connect Block**: P1N1, P1N2, P1N3, P2N1, P2N2, P2N3, P3N1, P3N2, P3N3, P12N
 
-
+**Custom Defined Transistor Category**: nch_lvt, pch_lvt
